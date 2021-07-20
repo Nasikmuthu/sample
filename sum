@@ -1,1 +1,83 @@
+import java.util.*;
 
+ // Compiler version JDK 11.0.2
+
+ import java.util.Scanner;
+
+class Calc
+
+{
+
+    public static void main(String[] args)
+
+    {
+
+        Scanner sc = new Scanner(System.in);
+
+        double num1, num2, choice, OP;
+
+        String NM, Y, N, P;
+
+        System.out.println("Hi There!!! Please Enter your name");
+
+        NM=sc.nextLine();
+
+        System.out.println(NM + ",That's a great name");
+
+        System.out.println("OK!!!Let's get into the project");
+
+        System.out.println("Choose an operator");
+
+        System.out.println("Enter 1 for Addition");
+
+        System.out.println("Enter 2 for Subraction");
+
+        System.out.println("Enter 3 for Multiplication");
+
+        System.out.println("Enter 4 for Division");
+
+        OP=sc.nextDouble();
+
+        System.out.println("Enter the first number");
+
+        num1=sc.nextDouble();
+
+        System.out.println("Enter the second number");
+
+        num2=sc.nextDouble();
+
+        if(OP==1) {
+
+        System.out.println("You have chosen for Addition");
+
+        System.out.println("The Sum is " + (num1 + num2));
+
+        }
+
+        if(OP==2) {
+
+        System.out.println("You have chosen for Subraction");
+
+        System.out.println("The Difference is " + (num1 - num2));
+
+        }
+
+        if(OP==3) {
+
+        System.out.println("You have chosen for Multiplication");
+
+        System.out.println("The Product is " + (num1 * num2));
+
+        }
+
+        if(OP==4) {
+
+        System.out.println("You have chosen for Division");
+
+        System.out.println("The Quotient is " + (num1 / num2));
+
+        }
+
+    }
+
+}
